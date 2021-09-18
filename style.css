@@ -13,26 +13,36 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gluten', cursive;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.2s linear;
 }
+/* html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+} */
 
 header{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 14px 13%;
+    padding: 4px 13%;
     display: flex;
-    /* background: var(--pink); */
     align-items: center;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
+    background: #fff;
     z-index: 1000;
 }
 header .logo{
     font-size: 35px;
     font-weight: bolder;
-    text-decoration: none;
     color: var(--black);
+    text-decoration: none;
 }
 header nav ul{
     display: flex;
@@ -44,7 +54,6 @@ header nav ul li{
 }
 header nav ul li a{
     text-decoration: none;
-    text-transform: capitalize;
     color: black;
 }
 header nav ul li a:hover{
@@ -55,15 +64,14 @@ header .search i{
     height: 40px;
     width: 40px;
     line-height: 40px;
-    text-decoration: none;
     margin-left: 6px;
     border-radius: 50%;
+    text-decoration: none;
     text-align: center;
     cursor: pointer;
     background: #eee;
     color: var(--black);
     font-size: 17px;
-    transition: all 0.6s linear;
 }
 
 header .search i:hover,
@@ -73,4 +81,21 @@ header .search a:hover{
 }
 header .search #bar{
     display: none;
+}
+
+.heading{
+    top: 30%;
+}
+.heading p{
+    font-size: 30px;
+}
+.heading h1{
+    font-size: 120px;
+}
+.heading button{
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+.heading button:hover{
+    background: var(--pink);
 }
