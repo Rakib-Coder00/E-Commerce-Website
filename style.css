@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&display=swap');
+
+:root{
+    --box-shadow:0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --pink: #e5345b;
+    --black: #000;
+    --white: #fff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gluten', cursive;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 14px 13%;
+    display: flex;
+    /* background: var(--pink); */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+header .logo{
+    font-size: 35px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--black);
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li{
+    margin-left: 20px;
+    padding: 20px;
+}
+header nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+header nav ul li a:hover{
+    color: var(--pink);
+}
+header .search a,
+header .search i{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    margin-left: 6px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    background: #eee;
+    color: var(--black);
+    font-size: 17px;
+    transition: all 0.6s linear;
+}
+
+header .search i:hover,
+header .search a:hover{
+    background: var(--pink);
+    transform: rotate(360deg);
+}
+header .search #bar{
+    display: none;
+}
