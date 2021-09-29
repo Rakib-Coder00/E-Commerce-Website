@@ -9,93 +9,39 @@
 
 
 *{
-    margin: 0;
+    /* margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gluten', cursive;
     outline: none;
     border: none;
+    /* text-decoration: none; */
+    /* transition: all 0.2s linear; */
     text-transform: capitalize;
-    text-decoration: none;
-    transition: all 0.2s linear;
+    font-family: 'Gluten', cursive;
 }
-/* html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-} */
-
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 4px 13%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: var(--box-shadow);
-    background: #fff;
-    z-index: 1000;
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
 }
-header .logo{
-    font-size: 35px;
-    font-weight: bolder;
-    color: var(--black);
-    text-decoration: none;
+.navbar-brand img{
+    width: 30px;
+    height: 25px;
 }
-header nav ul{
-    display: flex;
-    list-style: none;
+.navbar-brand{
+    letter-spacing: 2px;
 }
-header nav ul li{
-    margin-left: 20px;
-    padding: 20px;
+.nav-link.active,
+.nav-link:hover{
+    color: var(--pink) !important;
 }
-header nav ul li a{
-    text-decoration: none;
-    color: black;
-}
-header nav ul li a:hover{
-    color: var(--pink);
-}
-header .search a,
-header .search i{
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    margin-left: 6px;
-    border-radius: 50%;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    background: #eee;
-    color: var(--black);
-    font-size: 17px;
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
-header .search i:hover,
-header .search a:hover{
-    background: var(--pink);
-    transform: rotate(360deg);
-}
-header .search #bar{
-    display: none;
-}
 
-.heading{
-    top: 30%;
-}
-.heading p{
-    font-size: 30px;
-}
-.heading h1{
-    font-size: 120px;
-}
-.heading button{
-    padding: 10px 20px;
-    border-radius: 25px;
-}
-.heading button:hover{
-    background: var(--pink);
+
+/* media queries  */
+@media (min-width: 992px) {
+    .nav-item{
+        border-bottom: none;
+    }
 }

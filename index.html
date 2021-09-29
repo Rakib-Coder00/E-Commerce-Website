@@ -1,87 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce 01</title>
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce 01</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- header section starts -->
-    <header>
-        <a href="#" class="logo"><i class="fas fa-shopping-bag"></i><span>Attire</span></a>
-        <nav>
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">collection</a></li>
-                <li><a href="#">specials</a></li>
-                <li><a href="#">blogs</a></li>
-                <li><a href="#">about us</a></li>
-                <li><a href="#">popular</a></li>
-            </ul>
-        </nav>
-        <div class="search">
-            <i class="fas fa-bars" id="bar"></i>
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <i class="fas fa-search"></i>           
-        </div>
+  <!-- header section starts -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
 
-    </header>
-    <!-- Header section ends -->
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-flex justify-content-between align-item-center order-lg-0">
+        <img src="images/shopping-bag-icon.png" alt="">
+        <span class="text-uppercase fw-lighter ms-1">attire</span>
+      </a>
 
-    <!-- home section starts -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/banner-img-5.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block heading">
-                <p>best collection</p>
-                <h1>new season</h1>
-                <button>shop now</button>
-              </div>
-          </div>
-
-          <div class="carousel-item">
-            <img src="images/banner-img-1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block heading">
-                <p>best collection</p>
-                <h1>new arrivals</h1>
-                <button>shop now</button>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/banner-img-2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block heading">
-                <p>best collection</p>
-                <h1>top rated</h1>
-                <button>shop now</button>
-              </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+      <div class="order-lg-2">
+        <button class="btn position-relative">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">2</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+
+        <button class="btn position-relative">
+          <i class="fa fa-heart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">5</span>
+        </button>
+
+        <button class="btn position-relative">
+          <i class="fa fa-search"></i>
         </button>
       </div>
-    <!-- home section ends -->
+
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <i class="fas fa-stream"></i>
+      </button>
+
+      <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+
+        <ul class="navbar-nav mx-auto text-center">
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link active" href="#">home</a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link" href="#">collection</a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link" href="#">specials</a>
+          </li>
+          <li class="nav-item px-2 py-2">
+            <a class="nav-link" href="#">blogs</a>
+          </li>
+          <li class="nav-item px-2 py-2 border-0">
+            <a class="nav-link" href="#">about</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Header section ends -->
+
+  <!-- home section starts -->
+  <!-- home section ends -->
 
 
 
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
