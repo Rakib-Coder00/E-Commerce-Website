@@ -63,7 +63,7 @@
 .carousel-inner h1{
     font-size: 6rem;
 }
-.carousel-item::before{
+/* .carousel-item::before{
     content: "";
     display: block;
     position: absolute;
@@ -73,7 +73,7 @@
     right: 0;
     background: #000;
     opacity: 0.6;
-}
+} */
 .carousel-item{
     height: 100vh;
     min-height: 300px;
@@ -129,8 +129,27 @@
     transform: scale(1.2);
 }
 
+/* style offfer section  */
+#offers{
+    background: url(images/offer_img.jpg) center/cover no-repeat;
+}
+#offers .row{
+    height: 60vh;
+}
+.offer-content span{
+    font-size: 28px;
+}
+.offer-content h2{
+    font-size: 4rem;
+}
+.offer-content .btn{
+    border-color: transparent !important;
+}
 
-
+/* style about section  */
+#about{
+    background: rgba(0,0,0,0.05);
+}
 
 
 
@@ -163,5 +182,10 @@
 @media (min-width: 992px) {
     .nav-item{
         border-bottom: none;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-inner h1{
+        font-size: 2rem;
     }
 }
