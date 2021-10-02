@@ -152,11 +152,38 @@
 }
 
 
+/* style newsletter section  */
+#newsletter{
+    background: rgba(179,179,179,0.5);
+}
+#newsletter p{
+    max-width: 600px;
+}
 
+#newsletter .input-group{
+    max-width: 500px;
+}
+#newsletter .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#newsletter .btn{
+    background: var(--pink);
+    color: var(--white);
+    border-color: var(--pink);
+}
+#newsletter .btn:hover{
+    background: var(--black);
+    border-color: var(--black);
+}
 
-
-
-
+/* style footer section  */
+#footer a{
+    transition: color 0.4s ease;
+}
+#footer a:hover{
+    color: var(--pink) !important;
+}
 
 
 
